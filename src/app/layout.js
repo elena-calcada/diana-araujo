@@ -15,7 +15,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Diana Araujo | Odontologia Humanizada",
   description: "Clínica Odontológica Diana Araujo, nosso compromisso é oferecer saúde e bem estar através da Odontologia Humanizada.",
-  keywords: ["Diana Araújo", "Diana Araujo", "Desntista", "Dentista em Campos", "Dentista em Campos dos Goytacazes", "Odontologia", "Odontologia Humanizada", "Consultório Dentário", "Clínica Odontológica", "Clínica Odontológica em Campos", "Clínica Odontológica em Campos dos Goytacazes", "Campos dos Goytacazes", "Campos", "Campos/RJ", "Campos dos Goytacazes/RJ", "Rio de Janeiro"],
+  keywords: ["Diana Araújo", "Diana Araujo", "Desntista", "Dentista em Campos", "Dentista em Campos dos Goytacazes", "Odontologia", "Odontologia Humanizada", "Consultório Dentário", "Consultório Odontológico", "Clínica Odontológica", "Clínica Odontológica em Campos", "Clínica Odontológica em Campos dos Goytacazes", "Campos dos Goytacazes", "Campos", "Campos/RJ", "Campos dos Goytacazes/RJ", "Rio de Janeiro"],
   openGraph: {
     title: "Clínica Odontológica Diana Araujo",
     description: "Odontologia Humanizada",
