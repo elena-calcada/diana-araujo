@@ -28,7 +28,7 @@ export const metadata = {
       }
     ],
     locale: "pt-BR",
-    type: "Website"
+    type: "website"
   },
   robots: {
     index: true,
