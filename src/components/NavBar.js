@@ -67,6 +67,7 @@ const NavBar = () => {
           <Image 
             src={logo} 
             alt="Logotipo Diana Araújo"
+            priority
           />
           <nav className="lg:hidden">
             <ul className="flex gap-6">

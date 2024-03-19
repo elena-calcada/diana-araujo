@@ -28,7 +28,8 @@ export default function Home() {
             <div className="h-[calc(100vh+8rem)] relative">
               <Image 
                 src={desktop} 
-                alt="teste" 
+                alt="teste"
+                priority 
                 className="object-cover h-[calc(100vh+8rem)] absolute"
               />
 
