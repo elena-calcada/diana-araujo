@@ -20,12 +20,12 @@ module.exports = {
         bacgroundColorFooter: '#DCDCDC',
         hoverButton: '#616161',
       },
-      backgroundImage: {
-        desktop: "url('/public/images/home-desktop.png)",
-        tablet: "url('/public/images/home-teblet.png)",
-        mobile: "url('/public/images/home-mobile.png)",
-      },
     },
+
+    backgroundImage: {
+      desktop: "url('../../public/images/home-desktop.png')"
+    },
+
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }

@@ -6,31 +6,31 @@ export const menuItens = [
 
   {
     title: 'Sobre',
-    path: '/#aboult'
+    path: '/aboult'
   },
 
   {
     title: 'Tratamentos',
-    path: '/#treatments'
+    path: '/treatments'
   },
 
-  {
+  /* {
     title: 'Corpo Clínico',
-    path: '/#clinical-staff'
-  },
+    path: '/clinical-staff'
+  }, */
 
-  {
+/*   {
     title: 'Nosso Espaço',
-    path: '/#space'
-  },
+    path: '/space'
+  }, */
 
-  {
+/*   {
     title: 'Depoimentos',
-    path: '/#testimonials'
-  },
+    path: '/testimonials'
+  }, */
 
   {
     title: 'Contato',
-    path: '/#contact'
+    path: '/contact'
   },
 ]

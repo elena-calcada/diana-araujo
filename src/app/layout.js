@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 import { DM_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -7,7 +9,7 @@ const dm_sans = DM_Sans({
 });
 
 const poppins = Poppins({
-  weight: ["700"],
+  weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-title"
 });
@@ -46,7 +48,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-Br" className={`${dm_sans.variable} ${poppins.variable}`}>
-      <body>{children}</body>
+      <body>
+        <NavBar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
