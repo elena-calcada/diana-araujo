@@ -4,6 +4,8 @@ import LinkButtom from "@/components/LinkButtom";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import desktop from "../../public/images/home-desktop.png";
+import mobile from "../../public/images/home-mobile.png";
+import tablet from "../../public/images/home-tablet.png";
 
 const variants = {
   initial: {
@@ -29,20 +31,37 @@ export default function Home() {
             src={desktop} 
             alt="teste"
             priority 
-            className="object-cover h-[calc(100vh+8rem)] absolute"
+            className="h-[calc(100vh+8rem)] absolute md-max:hidden lg:object-cover"
           />
 
-          <div className="w-[55%] absolute left-48 top-40">
+          <Image 
+            src={tablet} 
+            alt="teste"
+            priority 
+            className="h-[calc(100vh+8rem)] absolute md-max:object-cover lg:hidden"
+          />
+
+          <Image 
+            src={mobile} 
+            alt="teste"
+            priority 
+            className="h-[calc(100vh+8rem)] absolute sm-max:object-cover md:hidden"
+          />
+
+          <div className="w-full absolute px-10 top-[12rem] sm:top-[14rem]
+           lg:top-[17rem] text-center
+          ">
             <AnimatedTitle 
-              title="Diana Araújo"
-              className="!text-8xl"
+              title=" Diana Araújo"
+              className="!text-[5rem] sm:!text-[6rem] md:!text-[7rem] xl:!text-[9rem]"
             />
             <motion.div
               variants={variants}
               initial='initial'
               animate='animate'
+              
             >
-              <p className="w-3/4 font-text font-normal text-titleColor text-xl mt-2 mb-8">
+              <p className="max-w-[500px] md:max-w-[600px] lg:max-w-[800px] mx-auto font-text font-normal text-titleColor text-base md:text-xl xl:text-2xl mt-2 mb-12">
                 Na Clínica Odontológica Diana Araújo, proporcionamos saúde e bem estar através da Odontologia Humanizada. Contamos com uma equipe  multidisciplinar, capacitada e experiente nas mais diversas áreas da Odontologia.
               </p>
 

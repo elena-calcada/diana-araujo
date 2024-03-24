@@ -29,8 +29,8 @@ const singelWord = {
 
 const AnimatedTitle = ({title, className=''}) => {
   return (
-    <div className='w-full mx-auto py-4 flex items-center justify-center overflow-hidden sm:py-0'>
-      <motion.h1 className={`inline-block w-full text-titleColor font-title font-bold text-7xl ${className}`}
+    <div className='w-full mx-auto flex items-center justify-center overflow-hidden'>
+      <motion.h1 className={`inline-block w-full text-titleColor font-title font-bold mb-12 text-7xl ${className}`}
         variants={quote}
         initial='initial'
         animate='animate'

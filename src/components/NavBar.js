@@ -3,7 +3,7 @@ import { menuItens } from "@/data/menuItems"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 import logo from "../../public/images/logo.svg"
@@ -24,12 +24,21 @@ export const CustomLink = ({href, title, className=""}) => {
     </Link>
   )
 }
-const CustomMobileLink = ({href, title, className=""}) => {
+const CustomMobileLink = ({href, title, className="", toggle}) => {
+  const router = useRouter()
   const pathName = usePathname()
+
+  const handleClik = () => {
+    toggle()
+    router.push(href)
+  }
+  
   return (
-    <Link 
+    <button 
       href={href} 
-      className={`${className} relative group text-white text-base font-medium font-title`}>
+      className={`${className} relative group text-white text-base font-medium font-title`}
+      onClick={handleClik}  
+    >
       {title}
       <span
         className={`
@@ -38,7 +47,7 @@ const CustomMobileLink = ({href, title, className=""}) => {
           ${pathName === href ? "w-full" : "w-0"}
         `}
       >&nbsp;</span>
-    </Link>
+    </button>
   )
 }
 
@@ -62,14 +71,16 @@ const NavBar = () => {
   }
 
   return (
-    <header className={shadow ? "w-full py-2 px-16 fixed z-50 bg-backgroundColor shadow-lg" : "w-full py-2 px-16 fixed z-50 bg-backgroundColor"}>
-      <div className="flex items-center justify-between">
-          <Image 
-            src={logo} 
-            alt="Logotipo Diana Araújo"
-            priority
-          />
-          <nav className="lg:hidden">
+    <header className={shadow ? "w-full py-2 px-10 fixed z-50 bg-backgroundColor shadow-lg" : "w-full py-2 px-10 fixed z-50 bg-backgroundColor"}>
+      <div className="flex items-center justify-between max-w-[1200px] mx-auto">
+          <Link href="/">
+            <Image 
+              src={logo} 
+              alt="Logotipo Diana Araújo"
+              priority
+            />
+          </Link>
+          <nav className="lg:block hidden">
             <ul className="flex gap-6">
               {menuItens.map((item, index) => (
                 <li key={index}>
@@ -78,7 +89,7 @@ const NavBar = () => {
               ))}
             </ul>
           </nav>
-          <nav className="flex items-center justify-center flex-wrap gap-8 lg:hidden">
+          <nav className="flex-wrap gap-8 lg:flex hidden">
             <motion.div
               className="shadow-lg p-2 rounded-full shadow-gray-400"
               whileHover={{y:-2}}
@@ -89,7 +100,7 @@ const NavBar = () => {
                 target={'_blank'}
                 className="w-6"
               > 
-                <FaWhatsapp className="h-7 w-7 text-primaryColor"/>
+                <FaWhatsapp className="h-7 w-7 fill-primaryColor"/>
               </Link>
             </motion.div>
             <motion.div
@@ -102,13 +113,13 @@ const NavBar = () => {
                 target={'_blank'}
                 className="w-8"
               >
-                <FaInstagram className="h-7 w-7 text-primaryColor"/>
+                <FaInstagram className="h-7 w-7 fill-primaryColor"/>
               </Link>
             </motion.div>
           </nav>
 
           <button 
-          className="flex-col justify-center items-center hidden lg:flex"
+          className="flex-col justify-center items-center lg:hidden block"
           onClick={handleClick}
           >
             <span 
@@ -144,7 +155,11 @@ const NavBar = () => {
               <ul className="flex flex-col gap-4 items-center ">
                 {menuItens.map((item, index) => (
                   <li key={index}>
-                    <CustomMobileLink href={item.path} title={item.title} className="" />
+                    <CustomMobileLink 
+                      href={item.path} 
+                      title={item.title} 
+                      toggle={handleClick} 
+                    />
                   </li>
                 ))}
               </ul>
@@ -161,7 +176,7 @@ const NavBar = () => {
                   target={'_blank'}
                   className="w-6"
                 > 
-                  <FaWhatsapp className=""/>
+                  <FaWhatsapp className="fill-white h-7 w-7"/>
                 </Link>
               </motion.div>
               <motion.div
@@ -174,7 +189,7 @@ const NavBar = () => {
                   target={'_blank'}
                   className="w-8"
                 >
-                  <FaInstagram className=""/>
+                  <FaInstagram className="fill-white h-7 w-7"/>
                 </Link>
               </motion.div>
             </nav>

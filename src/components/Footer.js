@@ -9,7 +9,7 @@ const MotionLink = motion(Link)
 const Footer = () => {
   return(
     <footer className="bg-bacgroundColorFooter">
-      <div className="flex gap-48 px-20 justify-center items-center py-8">
+      <div className="max-w-[700px] mx-auto flex xs:flex-col xs:gap-10 px-10 justify-between items-center py-8">
         <div className="flex flex-col items-center">
           <h2
             className="text-titleColor font-title text-lg font-semibold mb-4"
@@ -68,22 +68,24 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-primaryColor py-1 flex items-center justify-between px-20">
-        <span className="text-white font-text">
-          {new Date().getFullYear()} &copy; Todos os direitos reservados.
-        </span>
-        <div className="flex items-center font-text text-white">
-          Odontologia
-          <span className="text-[#E4B742] text-3xl px-1">&#9825;</span>
-          Humanizada
-        </div>
-        <Link 
-          href='https://api.whatsapp.com/send?phone=+5522999931164&text=Olá Diana! Cheguei aqui por meio do seu site. Gostaria de marcar uma consulta.'
-          className='underline underline-offset-2 text-white font-text'
-          target={'_blank'}
-        >
-          Diga olá
-        </Link>
+      <div className="bg-primaryColor py-1 px-10">
+        <div className="max-w-[1200px] mx-auto flex sm-max:flex-col items-center justify-between">
+          <span className="text-white font-text">
+            {new Date().getFullYear()} &copy; Todos os direitos reservados.
+          </span>
+          <div className="flex items-center font-text text-white">
+            Odontologia
+            <span className="text-[#E4B742] text-3xl px-1">&#9825;</span>
+            Humanizada
+          </div>
+          <Link 
+            href='https://api.whatsapp.com/send?phone=+5522999931164&text=Olá Diana! Cheguei aqui por meio do seu site. Gostaria de marcar uma consulta.'
+            className='underline underline-offset-2 text-white font-text'
+            target={'_blank'}
+          >
+            Diga olá
+          </Link>
+          </div>
       </div>
     </footer>
   )
