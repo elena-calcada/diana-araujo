@@ -6,12 +6,12 @@ export const menuItens = [
 
   {
     title: 'Sobre',
-    path: '/aboult'
+    path: '/sobre'
   },
 
   {
     title: 'Tratamentos',
-    path: '/treatments'
+    path: '/tratamentos'
   },
 
   /* {
@@ -31,6 +31,6 @@ export const menuItens = [
 
   {
     title: 'Contato',
-    path: '/contact'
+    path: '/contato'
   },
 ]

@@ -23,7 +23,9 @@ module.exports = {
     },
 
     backgroundImage: {
-      desktop: "url('../../public/images/home-desktop.png')"
+      desktop: "url('../../public/images/home-desktop.png')",
+      gradientOne: "linear-gradient(90deg, #4D4D4D 0%, rgba(72, 123, 114, 0) 100%)",
+      gradientTwo: "linear-gradient(270deg, #4D4D4D 0%, rgba(72, 123, 114, 0) 100%)"
     },
 
     screens: {

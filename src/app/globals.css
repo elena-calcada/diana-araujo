@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:before {
+  background: #4D4D4D !important;
+}
+
+.react-slideshow-container .default-nav svg {
+  fill: #4D4D4D !important;
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator:hover,
+.react-slideshow-container+ul.indicators .each-slideshow-indicator.active {
+  opacity: 1 !important;
+}
+
+.react-slideshow-container+ul.indicators .each-slideshow-indicator {
+  opacity: 0.35 !important;
+}
