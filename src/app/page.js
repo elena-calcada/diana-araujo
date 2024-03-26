@@ -49,11 +49,11 @@ export default function Home() {
           />
 
           <div className="w-full absolute px-10 top-[12rem] sm:top-[14rem]
-           lg:top-[17rem] text-center
+           lg:top-[12rem] 2xl:top-[18rem] text-center
           ">
             <AnimatedTitle 
               title=" Diana Araújo"
-              className="!text-[5rem] sm:!text-[6rem] md:!text-[7rem] xl:!text-[9rem]"
+              className="!text-[5rem] sm:!text-[6rem] md:!text-[6rem] lg:!text-[7rem] 2xl:!text-[9rem]"
             />
             <motion.div
               variants={variants}
@@ -61,7 +61,7 @@ export default function Home() {
               animate='animate'
               
             >
-              <p className="max-w-[500px] md:max-w-[600px] lg:max-w-[800px] mx-auto font-text font-normal text-titleColor text-base md:text-xl xl:text-2xl mt-2 mb-12">
+              <p className="max-w-[500px] md:max-w-[600px] lg:max-w-[800px] mx-auto font-text font-normal text-titleColor text-base lg:text-xl mt-2 mb-10">
                 Na Clínica Odontológica Diana Araújo, proporcionamos saúde e bem estar através da Odontologia Humanizada. Contamos com uma equipe  multidisciplinar, capacitada e experiente nas mais diversas áreas da Odontologia.
               </p>
 

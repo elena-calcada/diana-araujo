@@ -9,7 +9,7 @@ const MotionLink = motion(Link)
 const Footer = () => {
   return(
     <footer className="bg-bacgroundColorFooter">
-      <div className="max-w-[700px] mx-auto flex xs:flex-col xs:gap-10 px-10 justify-between items-center py-8">
+      <div className="max-w-[700px] sm-max:max-w-[500px] mx-auto flex xs:flex-col xs:gap-10 px-10 justify-between items-center py-8">
         <div className="flex flex-col items-center">
           <h2
             className="text-titleColor font-title text-lg font-semibold mb-4"
