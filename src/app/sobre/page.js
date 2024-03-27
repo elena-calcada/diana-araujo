@@ -32,25 +32,26 @@ export default function Aboult() {
       <SectionLayout id="sobre">
           <AnimatedTitle
             title="Sobre nós"
-            className="text-center mb-24"
+            className="text-center mt-6 sm-max:text-6xl"
           />
 
           <motion.div 
-            className="flex justify-between items-center gap"
+            className="w-full mx-auto mt-8 flex justify-between items-center xl:max-w-[1200px] lg-max:flex-col lg-max:w-full lg-max:px-0"
             variants={variants}
             initial='initial'
             animate='animate'
           >
-            <Image
-              src={aboultImage}
-              alt="Foto da Diana Araújo de óculos, olhando para a câmera e sorrindo"
-              priority
-              sizes='(max-width: 768px) 100vw,
-                    (max-width: 1200px) 50vw,
-                    50vw'
-            />
+            <div className="lg-max:w-full flex justify-center">
+              <Image
+                src={aboultImage}
+                alt="Foto da Diana Araújo de óculos, olhando para a câmera e sorrindo"
+                priority
+                className="xl:w-[525px] "
+                
+              />
+            </div>
             <div 
-              className="w-1/2 flex flex-col gap-[1rem] font-text text-base text-textColor"
+              className="xl:w-1/2 lg-max:mt-10 flex flex-col gap-[1rem] font-text text-base text-textColor "
             >
               <p>
                 Olá! Sou Diana, há mais de 10 anos responsável pelo consultório odontológico Diana Araújo. Aqui, o atendimento ao paciente é feito seguindo o conceito da Odontologia Humanizada, o que representa uma tranquilizadora diferença nessa área.
@@ -87,12 +88,12 @@ export default function Aboult() {
         className="!bg-white"
       >
         <h2
-          className="inline-block w-full text-titleColor font-title font-bold text-7xl text-center mb-12"
+          className="inline-block w-full text-titleColor font-title font-bold text-6xl text-center mb-12"
         >
           Nosso Espaço
         </h2>
 
-        <p className="font-text text-base text-textColor text-center mb-16 w-1/2 mx-auto">
+        <p className="font-text text-base text-textColor text-center mb-10 max-w-[600px] mx-auto">
           Venha conhecer o nosso espaço. Um ambiente humanizado, aconchegante e acolhedor. Aqui você se sentirá tranquilo e seguro.
         </p>
 
@@ -103,7 +104,7 @@ export default function Aboult() {
 
       <SectionLayout>
         <h2
-          className="inline-block w-full text-titleColor font-title font-bold text-7xl text-center mb-24"
+          className="inline-block w-full text-titleColor font-title font-bold text-6xl text-center mb-24"
         >
           O que as pessoas estão dizendo?
         </h2>

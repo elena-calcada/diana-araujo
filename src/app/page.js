@@ -48,7 +48,7 @@ export default function Home() {
             className="h-[calc(100vh+8rem)] absolute sm-max:object-cover md:hidden"
           />
 
-          <div className="w-full absolute px-10 top-[12rem] sm:top-[14rem]
+          <div className="w-full px-10 absolute top-[12rem] sm:top-[14rem]
            lg:top-[12rem] 2xl:top-[18rem] text-center
           ">
             <AnimatedTitle 

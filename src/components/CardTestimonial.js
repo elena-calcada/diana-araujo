@@ -4,17 +4,17 @@ import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 
 const zoomOutProperties = {
-  duration: 5000,
-  transitionDuration: 300,
+  duration: 8000,
+  transitionDuration: 1000,
   infinite: true,
   indicators: true,
-  scale: 1,
+  scale: 1.4,
   arrows: true
 };
 
 const CardTestimonial = () => {
   return (
-    <div className="w-[65%] mx-auto">
+    <div className="max-w-[700px] mx-auto">
       <Zoom {...zoomOutProperties}>
       {testimonials.map((testimonial) => (
           <div 

@@ -1,7 +1,7 @@
 const SectionLayout = ({children, className=""}) => {
   return (
     <section
-      className={`px-24 bg-backgroundColor py-28 ${className}`}
+      className={`px-10 bg-backgroundColor py-28 ${className}`}
     >
       {children}
     </section>

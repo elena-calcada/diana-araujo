@@ -18,3 +18,9 @@
 .react-slideshow-container+ul.indicators .each-slideshow-indicator {
   opacity: 0.35 !important;
 }
+
+@media(max-width: 767px) {
+  .react-slideshow-container .default-nav {
+    display: none !important;
+  }
+}
