@@ -19,7 +19,7 @@ const CardTestimonial = () => {
       {testimonials.map((testimonial) => (
           <div 
             key={testimonial.name}
-            className="max-w-[500px] mx-auto p-8 bg-white rounded shadow-lg"
+            className="max-w-[500px] mx-auto p-8 bg-white rounded shadow-lg xs:px-12"
           >
             <blockquote>
               <p className="font-text text-titleColor text-base mb-4 relative indent-8">

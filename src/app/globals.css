@@ -19,8 +19,8 @@
   opacity: 0.35 !important;
 }
 
-@media(max-width: 767px) {
+/* @media(max-width: 767px) {
   .react-slideshow-container .default-nav {
     display: none !important;
   }
-}
+} */
