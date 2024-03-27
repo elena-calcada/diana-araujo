@@ -147,12 +147,12 @@ const NavBar = () => {
 
         <>
           <motion.div
-            className="min-w-[70vw] max-h-[70vh] flex flex-col gap-6 items-center justify-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-primaryColor/90 rounded-lg backdrop-blur-md py-32"
+            className="min-w-[70vw] max-h-[70vh] flex flex-col gap-8 items-center justify-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-primaryColor/90 rounded-lg backdrop-blur-md py-32"
             initial={{scale:0, opacity:0, x:"-50%", y:"-50%"}}
             animate={{scale:1, opacity:1}}
           >
             <nav className="">
-              <ul className="flex flex-col gap-4 items-center ">
+              <ul className="flex flex-col gap-8 items-center ">
                 {menuItens.map((item, index) => (
                   <li key={index}>
                     <CustomMobileLink 
