@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import aboultImage from "../../../public/images/aboult.png";
 
-
 const variants = {
   initial: {
     opacity: 0,
@@ -23,8 +22,6 @@ const variants = {
     }
   }
 }
-
-
 
 export default function Aboult() {
   return (
@@ -102,7 +99,7 @@ export default function Aboult() {
 
       <DividerTwo/>
 
-      <SectionLayout>
+      <SectionLayout id="testimonials">
         <h2
           className="inline-block w-full text-titleColor font-title font-bold text-6xl text-center mb-24"
         >
@@ -111,6 +108,8 @@ export default function Aboult() {
 
         <CardTestimonial/>
       </SectionLayout>
+
+      <DividerOne/>
     </main>  
   )
 }
