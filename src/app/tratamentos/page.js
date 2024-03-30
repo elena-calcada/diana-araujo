@@ -27,7 +27,7 @@ export default function Treatments() {
       <SectionLayout>
         <AnimatedTitle
           title=" Nossos tratamentos"
-          className="text-center mt-6 sm:text-6xl xs:text-5xl"
+          className="text-center mt-6 sm:text-6xl xs:!text-[2.75rem]"
         />
 
         <motion.p 
