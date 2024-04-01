@@ -40,7 +40,7 @@ const Footer = () => {
               Localização
             </h2>
             <div className="flex flex-col items-center">
-              <p className="font-text text-textColor">Avanida Carmem Carneiro, XX</p>
+              <p className="font-text text-textColor">Avanida Carmem Carneiro, 409</p>
               <p className="font-text text-textColor">Parque Jardim Carioca</p>
               <p className="font-text text-textColor">Campos dos Goytacazes / RJ</p>
               <p className="font-text text-textColor">Telefone: (22) 9 9993-1164</p>
@@ -75,7 +75,7 @@ const Footer = () => {
           </span>
           <div className="flex items-center font-text text-white">
             Odontologia
-            <span className="text-[#E4B742] text-3xl px-1">&#9825;</span>
+            <span className="text-[#E4B742] text-2xl px-1">&#9825;</span>
             Humanizada
           </div>
           <Link 
