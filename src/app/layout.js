@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: "Clínica Odontológica Diana Araujo",
     description: "Odontologia Humanizada",
-    url: "https://dianaaraujo.vercel.app",
+    url: "https://www.dianaaraujo.com.br",
     siteName: "Diana Araujo",
     images: [
       {
