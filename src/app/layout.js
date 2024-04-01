@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://dianaaraujo.vercel.app'),
+  metadataBase: new URL('https://www.dianaaraujo.com.br'),
   title: "Diana Araujo | Odontologia Humanizada",
   description: "Clínica Odontológica Diana Araujo, nosso compromisso é oferecer saúde e bem estar através da Odontologia Humanizada.",
   keywords: ["Diana Araújo", "Diana Araujo", "Desntista", "Dentista em Campos", "Dentista em Campos dos Goytacazes", "Odontologia", "Odontologia Humanizada", "Consultório Dentário", "Consultório Odontológico", "Clínica Odontológica", "Clínica Odontológica em Campos", "Clínica Odontológica em Campos dos Goytacazes", "Campos dos Goytacazes", "Campos", "Campos/RJ", "Campos dos Goytacazes/RJ", "Rio de Janeiro"],
