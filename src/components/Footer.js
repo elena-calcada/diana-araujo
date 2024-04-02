@@ -40,7 +40,7 @@ const Footer = () => {
               Localização
             </h2>
             <div className="flex flex-col items-center">
-              <p className="font-text text-textColor">Avanida Carmem Carneiro, 409</p>
+              <p className="font-text text-textColor">Av. Profa. Carmem Carneiro, 409</p>
               <p className="font-text text-textColor">Parque Jardim Carioca</p>
               <p className="font-text text-textColor">Campos dos Goytacazes / RJ</p>
               <p className="font-text text-textColor">Telefone: (22) 9 9993-1164</p>
@@ -57,7 +57,7 @@ const Footer = () => {
               <FaInstagram className="h-7 w-7 text-textColor"/>
             </MotionLink>
             <MotionLink
-              href='https://www.instagram.com/dradianaaraujo90' 
+              href='https://api.whatsapp.com/send?phone=+5522999931164&text=Olá Diana! Cheguei aqui   por meio do seu site. Gostaria de marcar uma consulta.' 
               target={'_blank'}
               className="w-8"
               whileHover={{y:-2}}

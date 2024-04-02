@@ -96,7 +96,7 @@ const NavBar = () => {
               whileTap={{scale:0.9}}
             >
               <Link
-                href='https://www.instagram.com/dradianaaraujo90' 
+                href='https://api.whatsapp.com/send?phone=+5522999931164&text=Olá Diana! Cheguei aqui   por meio do seu site. Gostaria de marcar uma consulta.' 
                 target={'_blank'}
                 className="w-6"
               > 
